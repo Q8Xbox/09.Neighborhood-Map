@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #f86835;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.app-format {
+  display: flex;
+  flex-direction: row;
+  height: 95vh;
+}
+
+.search-format {
+  width: 100%;
+  height: 94vh;
+  word-wrap: break-word;
+}
+
+.search-locations {
+  width: 92%;
+  padding: 10px 3% 10px 3%;
+  background-size: 1.2em;
+  font-size: 1.2em;
+  max-height: 10%;
+}
+
+.image-dimensions {
+  width: 100%;
+}
+
+.title-block {
+  display: flex;
+  flex-direction: row;
+  min-height: 7%;
+}
+
+.title-place {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.location-style {
+  overflow: auto;
+  max-height: 93%;
+}
+
+.list-overrides:hover {
+  cursor: default;
+}
+
+.marker-title-style {
+  text-align: center;
+}
+
+.welcome-sign {
+  height: 5vh;
+  text-align: center;
+  background: #f86835;
+  color: white;
+  font: bold 1.2em "Fira Sans", serif;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.search-order, .info-tab-order {
+  width: 30%;
+}
+
+.map-order {
+  width: 100%;
+  height: 95vh;
+}
+
+.list-style {
+  max-height: 91%;
+  overflow: auto;
+}
+
+.list-style div:hover,
+.list-style div:hover svg path{
+  background: #f86835;
+  color: white;
+  fill:white;
+}
+
+.error-image {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.error-page {
+  max-height: 93%;
+  overflow: auto;
+}
+
+.inner-margin {
+  color:red;
+  font-weight: normal;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.page-banner {
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .app-format {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map-order {
+    order: 0;
+    height: 50vh;
+  }
+
+  .search-order {
+    order: 1;
+    width: 100%;
+  }
+
+  .info-tab-order {
+    order: 1;
+    width: 100%;
+  }
+
+  .list-style {
+    overflow: visible;
+  }
+
+  .location-style {
+    overflow: visible;
+  }
+
+  .welcome-sign {
+    height: 5vh;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .welcome-sign {
+    height: 10vh;
+  }
+}

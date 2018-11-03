@@ -1,0 +1,29 @@
+{
+  "name": "neighborhood-map",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "google-map-react": "^1.0.9",
+    "hoek": "^6.0.0",
+    "material-ui": "^0.20.0",
+    "react": "^16.6.0",
+    "react-async-script-loader": "^0.3.0",
+    "react-dom": "^16.6.0",
+    "react-google-map-street-view": "^1.1.0",
+    "react-google-maps": "^9.4.5",
+    "react-scripts": "2.1.1",
+    "sort-by": "^1.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
