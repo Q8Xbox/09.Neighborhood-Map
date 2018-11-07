@@ -70,6 +70,20 @@ class App extends Component {
 
   render() {
     const api = 'https://maps.googleapis.com/maps/api/js?key=' + GOOGLE_MAP_API_KEY + '&v=3.exp&libraries=geometry,drawing,places'
+
+    setTimeout(function () {
+      try{
+          if (!window.google || !window.google.maps) {
+            //This will Throw the error if 'google' is not defined
+            alert("Google is not responding. Check your connection or come back later.")
+          }
+      }
+      catch (e) {
+          //You can write the code for error handling here
+          //Something like alert('Ah...Error Occurred!');
+      }
+    }, 5000);
+
     return (
       <MuiThemeProvider>
         <div role="Application">

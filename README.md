@@ -6,6 +6,10 @@ This is Neighborhood Map React Project made for **Udacity** Front-End Developer 
 
 In this project we have Neighborhood Map React Project featuring a map of Barcelona. This map have a functionality to highlighted some locations and use of Foursquare a third-party api to display a data about those locations and various ways to browse the content.
 
+## Note
+
+The service worker works properly in the production mood, not in the development mood. This lets the app load faster on subsequent visits in production, and gives it offline capabilities. However, it also means that developers (and users) will only see deployed updates on the "N+1" visit to a page, since previously cached resources are updated in the background.
+
 ## Run the Application
 
 In order to run the application follow these steps:
